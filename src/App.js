@@ -9,21 +9,7 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 
 function App() {
   return (
-  /*
-    <div className='main'>
-    <NavBar/>
-    <main></main>
-    <HomeComponent/>
-    <Footer/>
-    </div>
-     );
-    
-    <BrowserRouter>
-     <Routes>
-   
-   <Route path="/list" element={<ListComponent/>} exact />
-   </Routes>
-    </BrowserRouter>*/
+ 
     <div>
         <Router>
            
