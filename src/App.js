@@ -4,16 +4,12 @@ import ListComponent from './Components/ListComponent';
 import Footer from './Components/Footer';
 import NavBar from './Components/NavBar';
 import HomeComponent from './Components/HomeComponent'
-import {
-  BrowserRouter ,
-  Routes,
-  Route,
-  Link
-} from "react-router-dom";
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+
 
 function App() {
   return (
-  
+  /*
     <div className='main'>
     <NavBar/>
     <main></main>
@@ -27,8 +23,25 @@ function App() {
    
    <Route path="/list" element={<ListComponent/>} exact />
    </Routes>
-    </BrowserRouter>
- 
+    </BrowserRouter>*/
+    <div>
+        <Router>
+           
+           
+                <NavBar></NavBar>
+                <div className="container">
+                    <Routes>
+                        <Route path='/' exact element={<HomeComponent />} />
+                       
+                        <Route path='/list' element={< ListComponent/>} />
+                    </Routes>
+               </div>
+               <Footer></Footer>
+               
+           
+        </Router>
+      </div>
+  );
 }
 
 export default App;
