@@ -3,6 +3,7 @@ import './App.css';
 import ListComponent from './Components/ListComponent';
 import Footer from './Components/Footer';
 import NavBar from './Components/NavBar';
+import ShowFile from './Components/ShowFile';
 import HomeComponent from './Components/HomeComponent'
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 
@@ -17,9 +18,10 @@ function App() {
                 <NavBar></NavBar>
                 <div className="container">
                     <Routes>
-                        <Route path='/' exact element={<HomeComponent />} />
+                        <Route path='/'  element={<HomeComponent />} />
                        
                         <Route path='/list' element={< ListComponent/>} />
+                        <Route path='/list/show' element={< ShowFile/>} />
                     </Routes>
                </div>
                <Footer></Footer>

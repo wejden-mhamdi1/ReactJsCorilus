@@ -12,10 +12,10 @@ function NavBar() {
 
         <div class="collapse navbar-collapse" id="easylo">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"> <a class="nav-link text-dark" href="">Home</a> </li>
+                <li class="nav-item"> <a class="nav-link text-dark" href="/">Home</a> </li>
                 <li class="nav-item"> <a class="nav-link text-dark" href="">About</a> </li>
                 <li class="nav-item"> <a class="nav-link text-dark" href="">Services</a></li>
-                <li class="nav-item"> <a class="nav-link text-dark" href="">Blog</a></li>
+                <li class="nav-item"> <a class="nav-link text-dark" href="/list">EFACT</a></li>
               
                 <li class="nav-item"> <a class="nav-link btn border-0 btn-primary" href="">Contact</a></li>
             </ul>
