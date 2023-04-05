@@ -6,6 +6,8 @@ import NavBar from './Components/NavBar';
 import ShowFile from './Components/ShowFile';
 import HomeComponent from './Components/HomeComponent'
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import ShowSplitedFile from './Components/ShowSplitedFile';
+import FileSplited from './Components/FileSplited';
 
 
 function App() {
@@ -22,6 +24,8 @@ function App() {
                        
                         <Route path='/list' element={< ListComponent/>} />
                         <Route path='/list/show' element={< ShowFile/>} />
+                        <Route path='/list/Splited' element={< ShowSplitedFile/>} />
+                        <Route path='/list/Split/:id' element={< FileSplited/>} />
                     </Routes>
                </div>
                <Footer></Footer>
